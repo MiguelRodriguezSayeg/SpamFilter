@@ -42,8 +42,9 @@ def plot_confusion_matrix(cm, classes,
     plt.xlabel('Predicted label')
     plt.tight_layout()
 
-
-data = pd.read_csv("C:\\Users\\MIGUEL RODRIGUEZ\\PycharmProjects\\Data_Mining\\emails.csv",encoding='latin-1')
+'''emails' csv downloaded from Kaggle's spam dataset https://www.kaggle.com/karthickveerakumar/spam-filter'''
+    
+data = pd.read_csv("YOUR_PATH\\emails.csv",encoding='latin-1')
 
 out = data['spam']
 text = data['text']
